@@ -26,12 +26,11 @@ Partial Class MainMenu_Form
         Me.titlebar_panel = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.menubar_panel = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.content_panel = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.logout_button = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.book_new_customer_button = New System.Windows.Forms.Button()
+        Me.content_panel = New System.Windows.Forms.Panel()
         Me.titlebar_panel.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.menubar_panel.SuspendLayout()
@@ -59,7 +58,7 @@ Partial Class MainMenu_Form
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Ship_Star.My.Resources.Resources.logo_shipstar11
-        Me.PictureBox1.Location = New System.Drawing.Point(177, 3)
+        Me.PictureBox1.Location = New System.Drawing.Point(222, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(435, 75)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -72,40 +71,64 @@ Partial Class MainMenu_Form
         Me.menubar_panel.Controls.Add(Me.logout_button)
         Me.menubar_panel.Controls.Add(Me.Button4)
         Me.menubar_panel.Controls.Add(Me.Button3)
-        Me.menubar_panel.Controls.Add(Me.Button2)
-        Me.menubar_panel.Controls.Add(Me.Button1)
+        Me.menubar_panel.Controls.Add(Me.book_new_customer_button)
         Me.menubar_panel.Dock = System.Windows.Forms.DockStyle.Top
         Me.menubar_panel.Location = New System.Drawing.Point(0, 106)
         Me.menubar_panel.Name = "menubar_panel"
         Me.menubar_panel.Size = New System.Drawing.Size(870, 45)
         Me.menubar_panel.TabIndex = 2
         '
+        'logout_button
+        '
+        Me.logout_button.FlatAppearance.BorderSize = 0
+        Me.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.logout_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.logout_button.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.logout_button.Location = New System.Drawing.Point(654, 3)
+        Me.logout_button.Name = "logout_button"
+        Me.logout_button.Size = New System.Drawing.Size(210, 39)
+        Me.logout_button.TabIndex = 4
+        Me.logout_button.Text = "Logout"
+        Me.logout_button.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.Button4.Location = New System.Drawing.Point(438, 3)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(210, 39)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "Search Record"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(351, 3)
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.Button3.Location = New System.Drawing.Point(222, 3)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(168, 39)
+        Me.Button3.Size = New System.Drawing.Size(210, 39)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Available Ship"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Button2
+        'book_new_customer_button
         '
-        Me.Button2.Location = New System.Drawing.Point(177, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(168, 39)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Add Ship"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(3, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(168, 39)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Book New Customer"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.book_new_customer_button.FlatAppearance.BorderSize = 0
+        Me.book_new_customer_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.book_new_customer_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.book_new_customer_button.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.book_new_customer_button.Location = New System.Drawing.Point(6, 3)
+        Me.book_new_customer_button.Name = "book_new_customer_button"
+        Me.book_new_customer_button.Size = New System.Drawing.Size(210, 39)
+        Me.book_new_customer_button.TabIndex = 0
+        Me.book_new_customer_button.Text = "Book New Customer"
+        Me.book_new_customer_button.UseVisualStyleBackColor = True
         '
         'content_panel
         '
@@ -115,24 +138,6 @@ Partial Class MainMenu_Form
         Me.content_panel.Name = "content_panel"
         Me.content_panel.Size = New System.Drawing.Size(870, 449)
         Me.content_panel.TabIndex = 3
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(525, 3)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(168, 39)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "View"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'logout_button
-        '
-        Me.logout_button.Location = New System.Drawing.Point(699, 3)
-        Me.logout_button.Name = "logout_button"
-        Me.logout_button.Size = New System.Drawing.Size(168, 39)
-        Me.logout_button.TabIndex = 4
-        Me.logout_button.Text = "Logout"
-        Me.logout_button.UseVisualStyleBackColor = True
         '
         'MainMenu_Form
         '
@@ -159,9 +164,8 @@ Partial Class MainMenu_Form
     Friend WithEvents menubar_panel As Panel
     Friend WithEvents content_panel As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents book_new_customer_button As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents logout_button As Button
+    Friend WithEvents Button3 As Button
 End Class

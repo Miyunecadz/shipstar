@@ -62,6 +62,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\_Getintopc.com_Bunifu_UI_Form_1.9.0.1\Bunifu_UI_Form_1.﻿9.0.1\Bunifu UI WinForms 1.9.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -133,12 +136,13 @@
     <Compile Include="Authentication Views\SignUp_Form_View.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NewCustomer_View.Designer.vb">
-      <DependentUpon>Book_New_View.vb</DependentUpon>
+    <Compile Include="MainMenu Views\New_Book_Customer_View.Designer.vb">
+      <DependentUpon>New_Book_Customer_View.vb</DependentUpon>
     </Compile>
-    <Compile Include="Book_New_View.vb">
+    <Compile Include="MainMenu Views\New_Book_Customer_View.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Ships.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Authentication_Form.resx">
@@ -160,8 +164,8 @@
     <EmbeddedResource Include="Authentication Views\SignUp_Form_View.resx">
       <DependentUpon>SignUp_Form_View.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewCustomer_View.resx">
-      <DependentUpon>Book_New_View.vb</DependentUpon>
+    <EmbeddedResource Include="MainMenu Views\New_Book_Customer_View.resx">
+      <DependentUpon>New_Book_Customer_View.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -202,8 +206,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MainMenu Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
