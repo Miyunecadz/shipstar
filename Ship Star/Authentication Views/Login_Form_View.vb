@@ -6,9 +6,12 @@
         Dim db_response As Boolean =  DatabaseHandler.login(username_textbox.Text, password_textbox.Text)
         
         If db_response Then
-            
+            me.Hide()
+            username_textbox.Text = ""
+            password_textbox.Text = ""
+            MainMenu_Form.Show()
         else 
-
+            password_textbox.Text = ""
             MessageBox.Show("Wrong Username/Password!")
         End If
     End Sub

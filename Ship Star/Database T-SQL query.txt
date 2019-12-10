@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[Users] (
+    [Id]        INT          IDENTITY (1, 1) NOT NULL,
+    [Fullnames] VARCHAR (50) NOT NULL,
+    [Usernames] VARCHAR (50) NOT NULL,
+    [Passwords] VARCHAR (50) NOT NULL,
+    [Branch]    VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Available_Ship] (
+    [Id]                 BIGINT        IDENTITY (1, 1) NOT NULL,
+    [ship_name]          VARCHAR (50)  NOT NULL,
+    [dates]              DATETIME      NOT NULL,
+    [available_seats]    VARCHAR (MAX) NOT NULL,
+    [accommodation_type] VARCHAR (50)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Users] (
+    [Id]        INT          IDENTITY (1, 1) NOT NULL,
+    [Fullnames] VARCHAR (50) NOT NULL,
+    [Usernames] VARCHAR (50) NOT NULL,
+    [Passwords] VARCHAR (50) NOT NULL,
+    [Branch]    VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);

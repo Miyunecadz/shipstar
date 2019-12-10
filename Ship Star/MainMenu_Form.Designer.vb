@@ -27,8 +27,8 @@ Partial Class MainMenu_Form
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.menubar_panel = New System.Windows.Forms.Panel()
         Me.logout_button = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.view_records_button = New System.Windows.Forms.Button()
+        Me.available_ship_button = New System.Windows.Forms.Button()
         Me.book_new_customer_button = New System.Windows.Forms.Button()
         Me.content_panel = New System.Windows.Forms.Panel()
         Me.titlebar_panel.SuspendLayout()
@@ -69,8 +69,8 @@ Partial Class MainMenu_Form
         '
         Me.menubar_panel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(181, Byte), Integer))
         Me.menubar_panel.Controls.Add(Me.logout_button)
-        Me.menubar_panel.Controls.Add(Me.Button4)
-        Me.menubar_panel.Controls.Add(Me.Button3)
+        Me.menubar_panel.Controls.Add(Me.view_records_button)
+        Me.menubar_panel.Controls.Add(Me.available_ship_button)
         Me.menubar_panel.Controls.Add(Me.book_new_customer_button)
         Me.menubar_panel.Dock = System.Windows.Forms.DockStyle.Top
         Me.menubar_panel.Location = New System.Drawing.Point(0, 106)
@@ -91,31 +91,31 @@ Partial Class MainMenu_Form
         Me.logout_button.Text = "Logout"
         Me.logout_button.UseVisualStyleBackColor = True
         '
-        'Button4
+        'view_records_button
         '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(438, 3)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(210, 39)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Search Record"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.view_records_button.FlatAppearance.BorderSize = 0
+        Me.view_records_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.view_records_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.view_records_button.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.view_records_button.Location = New System.Drawing.Point(438, 3)
+        Me.view_records_button.Name = "view_records_button"
+        Me.view_records_button.Size = New System.Drawing.Size(210, 39)
+        Me.view_records_button.TabIndex = 3
+        Me.view_records_button.Text = "View Records"
+        Me.view_records_button.UseVisualStyleBackColor = True
         '
-        'Button3
+        'available_ship_button
         '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(222, 3)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(210, 39)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Available Ship"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.available_ship_button.FlatAppearance.BorderSize = 0
+        Me.available_ship_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.available_ship_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.available_ship_button.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.available_ship_button.Location = New System.Drawing.Point(222, 3)
+        Me.available_ship_button.Name = "available_ship_button"
+        Me.available_ship_button.Size = New System.Drawing.Size(210, 39)
+        Me.available_ship_button.TabIndex = 2
+        Me.available_ship_button.Text = "Available Ship"
+        Me.available_ship_button.UseVisualStyleBackColor = True
         '
         'book_new_customer_button
         '
@@ -165,7 +165,7 @@ Partial Class MainMenu_Form
     Friend WithEvents content_panel As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents book_new_customer_button As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents view_records_button As Button
     Friend WithEvents logout_button As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents available_ship_button As Button
 End Class

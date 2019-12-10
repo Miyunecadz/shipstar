@@ -63,13 +63,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\Downloads\Compressed\_Getintopc.com_Bunifu_UI_Form_1.9.0.1\Bunifu_UI_Form_1.﻿9.0.1\Bunifu UI WinForms 1.9.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -101,7 +102,19 @@
     <Compile Include="Authentication_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MainMenu Views\Available_Ship_View.Designer.vb">
+      <DependentUpon>Available_Ship_View.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu Views\Available_Ship_View.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="DatabaseHandler.vb" />
+    <Compile Include="MainMenu Views\Custom_Controller_Form.Designer.vb">
+      <DependentUpon>Custom_Controller_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu Views\Custom_Controller_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainMenu_Form.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -142,11 +155,28 @@
     <Compile Include="MainMenu Views\New_Book_Customer_View.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ships.vb" />
+    <Compile Include="MainMenu Views\ViewRecords.Designer.vb">
+      <DependentUpon>ViewRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu Views\ViewRecords.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Update_Form.Designer.vb">
+      <DependentUpon>Update_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Authentication_Form.resx">
       <DependentUpon>Authentication_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu Views\Available_Ship_View.resx">
+      <DependentUpon>Available_Ship_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu Views\Custom_Controller_Form.resx">
+      <DependentUpon>Custom_Controller_Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu_Form.resx">
       <DependentUpon>MainMenu_Form.vb</DependentUpon>
@@ -166,6 +196,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu Views\New_Book_Customer_View.resx">
       <DependentUpon>New_Book_Customer_View.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu Views\ViewRecords.resx">
+      <DependentUpon>ViewRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Form.resx">
+      <DependentUpon>Update_Form.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +227,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo-shipstar11.png" />
+    <Content Include="Database T-SQL query.txt" />
     <Content Include="StarShip_Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
