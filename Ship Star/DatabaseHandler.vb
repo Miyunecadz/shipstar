@@ -568,20 +568,20 @@ Module DatabaseHandler
     'add available seat
     Public Function restore_seat(ByVal seat_book As String, ByVal remaining_seats() As String, ByVal ship_name As String, ByVal dates As DateTime, ByVal accommodation_type As String)
         Dim result As String
-        Dim new_array(remaining_seats.Count) As String
+        Dim new_array(remaining_seats.Count) As Integer
         Dim newIndex As Integer = 0
+        Dim typeCastArray() As Integer
 
         For i As Integer = 0 To remaining_seats.Count - 1
-            new_array(i) = remaining_seats(i)
+            new_array(i) = Integer.Parse(remaining_seats(i))
             newIndex += 1
         Next
-
 
         new_array(newIndex) = seat_book
 
         Array.Sort(new_array)
 
-        update_availableShip(ship_name, dates, accommodation_type, new_array)
+
 
 
 
@@ -589,8 +589,9 @@ Module DatabaseHandler
         result = String.Join("-", new_array)
 
         'remove trailing "-"
-        result = result.Substring(0, result.Length - 1)
+        'result = result.Substring(0, result.Length - 1)
 
+        update_availableShip(ship_name, dates, accommodation_type, result)
 
         Return result
     End Function

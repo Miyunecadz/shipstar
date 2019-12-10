@@ -3,6 +3,17 @@
         get_ticket(view_record_datagrid)
 
         Me.view_record_datagrid.Columns("Id").Visible = False
+
+        Me.view_record_datagrid.Columns(1).HeaderText = "Ticket Number"
+        Me.view_record_datagrid.Columns(2).HeaderText = "Destination"
+        Me.view_record_datagrid.Columns(3).HeaderText = "Date Sail"
+        Me.view_record_datagrid.Columns(4).HeaderText = "Ship Name"
+        Me.view_record_datagrid.Columns(5).HeaderText = "Accommodation Type"
+        Me.view_record_datagrid.Columns(6).HeaderText = "Seat Number"
+        Me.view_record_datagrid.Columns(7).HeaderText = "Passenger Name"
+        Me.view_record_datagrid.Columns(8).HeaderText = "Passenger Age"
+        Me.view_record_datagrid.Columns(9).HeaderText = "Fare Type"
+        Me.view_record_datagrid.Columns(10).HeaderText = "Date Booked"
     End Sub
 
     Private Sub View_record_datagrid_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles view_record_datagrid.CellDoubleClick

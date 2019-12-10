@@ -4,6 +4,7 @@
         For x As Integer = 1 To 20
             seat_number_dropdown.Items.Add(x)
         Next
+        date_booked_datepicker.Value = DateTime.Today
 
         date_sail_datepicker.MinDate = Date.Today
         date_sail_datepicker.MaxDate = Date.Today.AddDays(2)

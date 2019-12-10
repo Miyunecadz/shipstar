@@ -28,10 +28,13 @@ Partial Class ViewRecords
         '
         'view_record_datagrid
         '
+        Me.view_record_datagrid.AllowUserToAddRows = False
+        Me.view_record_datagrid.AllowUserToDeleteRows = False
         Me.view_record_datagrid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.view_record_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.view_record_datagrid.Location = New System.Drawing.Point(3, 3)
         Me.view_record_datagrid.Name = "view_record_datagrid"
+        Me.view_record_datagrid.ReadOnly = True
         Me.view_record_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         Me.view_record_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.view_record_datagrid.Size = New System.Drawing.Size(864, 443)
